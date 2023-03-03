@@ -44,7 +44,6 @@ body {
         ". nav ."
         ". main ."
         " footer footer footer";
-    overflow-y: scroll;
 }
 
 header {
@@ -75,10 +74,6 @@ main {
 .tiny {
     font-size: 0.5em;
     text-align: center;
-}
-
-#linkedIn p {
-
 }
 
 #linkedIn img {
