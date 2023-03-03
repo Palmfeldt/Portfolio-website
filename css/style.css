@@ -1,0 +1,240 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+/* ----- Grundstil för webbsidan ----- */
+
+html {
+    font-size: 16px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html,
+body,
+nav,
+header,
+main,
+aside,
+footer,
+article,
+section,
+div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout */
+
+
+
+body {
+    /* Bild är tagen själv */
+    background-image: url("../img/back.jpg");
+    background-repeat: no-repeat;
+    background-color: #92adaf;
+    background-size: 100%;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: auto minmax(auto, 1000px) auto;
+    grid-template-rows: min-content min-content auto min-content;
+    grid-template-areas:
+        "header header header"
+        ". nav ."
+        ". main ."
+        " footer footer footer";
+    overflow-y: scroll;
+}
+
+header {
+    grid-area: header;
+    background-color: #f2f5f8;
+    padding: 5px;
+    border-bottom: 2px solid #585858;
+    top: 0;
+    z-index: 999;
+}
+
+main {
+    grid-area: main;
+    background-color: #C8EAED;
+    padding: 10px;
+}
+
+/* För menyn */
+
+#menuicon {
+    display: none;
+}
+
+/* Visa ej checkbox för nav */
+#menucheckbox {
+    display: none;
+}
+
+
+/*För menyn hover */
+#locnav a:hover,
+#globnav a:hover {
+    text-decoration: underline;
+}
+
+/* markera currentpage */
+nav a.currentPage {
+    background-color: rgb(7, 116, 160);
+    color: #ffffff;
+}
+
+/* Navigeringsbar */
+nav {
+    grid-area: nav;
+    background-color: #3FACBC;
+    font-size: 1.1em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    border-bottom: #585858;
+}
+
+
+nav a {
+    color: #666666;
+    padding: 0.4em;
+    text-decoration: none;
+    display: block;
+}
+
+
+/*foten på sidan */
+footer {
+    grid-area: footer;
+    background-color: #505c69;
+    color: #cccccc;
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid #585858;
+}
+
+/* visa i mitten */
+.centrum {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/*titlarna för sidorna */
+.titles {
+    text-align: center;
+    background-color: #f0f4f8;
+    color: #000000;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+/* index "posts" */
+.posts {
+    border-radius: 5px;
+    border-style: solid;
+    border-width: thin;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 20px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+}
+
+.posts img {
+    margin-right: 15px;
+    float: right;
+    max-width: 20%;
+    height: auto;
+    margin-bottom: 5px;
+    transition: all 150ms ease;
+}
+
+.posts img:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+
+}
+
+.posts h3,
+.posts p {
+    margin-left: 15px;
+    display: block;
+    margin: 2px 0 0 0;
+}
+
+footer p a {
+    text-decoration: none !important;
+    text-decoration: none;
+    color: #9999ff
+}
+
+/*Använt från labben, för mobila enheter och mindre fönster */
+@media screen and (max-width: 740px) {
+    body {
+        grid-template-columns: auto;
+        grid-template-rows: min-content min-content auto min-content;
+        grid-template-areas:
+            "nav"
+            "header"
+            "main"
+            "footer";
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header img {
+        max-width: 1000px;
+        margin: 0 auto;
+        width: 50%;
+        max-width: 100px;
+        z-index: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    #maps {
+        display: none;
+    }
+
+    #menuicon {
+        /*Bra image som återanvänds*/
+        background-image: url(../img/menuicon.png);
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    #menucheckbox~ul {
+        display: none;
+    }
+
+    #menucheckbox:checked~ul {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+    }
+}
