@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-/* ----- Grundstil för webbsidan ----- */
 
 html {
     font-size: 16px;
@@ -64,6 +63,28 @@ main {
 }
 
 /* För menyn */
+
+#palmfeldtTitle {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.tiny {
+    font-size: 0.5em;
+    text-align: center;
+}
+
+#linkedIn p {
+
+}
+
+#linkedIn img {
+    width: 30px;
+    height: auto;
+}
 
 #menuicon {
     display: none;
@@ -138,11 +159,11 @@ footer {
     color: #000000;
     padding-top: 15px;
     padding-bottom: 15px;
-
 }
 
 /* index "posts" */
 .posts {
+    margin-top: 10px;
     border-radius: 5px;
     border-style: solid;
     border-width: thin;
@@ -165,7 +186,6 @@ footer {
 .posts img:hover {
     transform: scale(1.5);
     cursor: pointer;
-
 }
 
 .posts h3,
