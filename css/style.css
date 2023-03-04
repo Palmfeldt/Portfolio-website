@@ -27,8 +27,6 @@ div {
 
 /* Layout */
 
-
-
 body {
     /* Bild är tagen själv */
     background-image: url("../img/back.jpg");
@@ -59,18 +57,19 @@ main {
     grid-area: main;
     background-color: #C8EAED;
     padding: 10px;
+    padding-bottom: 20px;
 }
 
 /* För menyn */
 
 #palmfeldtTitle {
-    font-size: 1.5em;
+    font-size: 2.5em;
     font-weight: bold;
     color: #000000;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+
 }
+
 .tiny {
     font-size: 0.5em;
     text-align: center;
@@ -90,6 +89,9 @@ main {
     display: none;
 }
 
+#locnav {
+    border-top: 1px solid #ffffff;
+}
 
 /*För menyn hover */
 #locnav a:hover,
@@ -106,7 +108,7 @@ nav a.currentPage {
 /* Navigeringsbar */
 nav {
     grid-area: nav;
-    background-color: #3FACBC;
+    background-color: #4e9eaa;
     font-size: 1.1em;
 }
 
@@ -117,12 +119,11 @@ nav ul {
     display: flex;
     flex-direction: row;
     gap: 1em;
-    border-bottom: #585858;
 }
 
 
 nav a {
-    color: #666666;
+    color: #ffffff;
     padding: 0.4em;
     text-decoration: none;
     display: block;
@@ -136,7 +137,7 @@ footer {
     color: #cccccc;
     padding: 10px;
     text-align: center;
-    border-top: 2px solid #585858;
+    box-shadow: 0px -1px 5px 1px rgba(86, 86, 86, 0.39);
 }
 
 /* visa i mitten */
