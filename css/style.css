@@ -31,7 +31,8 @@ body {
     /* Bild är tagen själv */
     background-image: url("../img/back.jpg");
     background-repeat: no-repeat;
-    background-color: #92adaf;
+    background-attachment: fixed;
+    background-color: #1f2a3c;
     background-size: 100%;
     font-family: 'Montserrat', sans-serif;
     display: grid;
