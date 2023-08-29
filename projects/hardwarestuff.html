@@ -32,9 +32,102 @@
     </nav>
 
     <main>
+      <script src="/js/zoom.js"></script>
+      <!-- Modal -->
+      <div id="myModal" class="modal">
+        <span class="modal-close" onclick="zoomOut();">&times;</span>
+        <img id="modalImg" class="modal-content" />
+      </div>
+
       <div class="titles">
-        <h2>Current working projects</h2>
-        <p>I work on a lot of stuff as sideprojects...</p>
+        <h2>Hardware stuff</h2>
+        <p>
+          Here most of my hardware related projects or other noteworthy stuff
+        </p>
+      </div>
+
+      <div class="posts">
+        <h3>Arduino Keyboard (Atmega32u4)</h3>
+        <p>
+          I've been working on a custom keyboard for a while now. It's based on
+          the Arduino Leonardo (Atmega32u4) and uses custom made firmware made
+          in arduino code (C++). The case and keycaps are 3D printed. The
+          keyboard was designed to be a gamepad for Jubeat hence the 4x4 matrix.
+          Cherry MX silent reds switches are used. You can find the code on my
+          Github:
+          <a href="https://github.com/Palmfeldt/Arduino-keypad" target="_blank"
+            >Arduino-keypad</a
+          >
+        </p>
+        <img
+          src="/img/keyboard_front.jpg"
+          alt="keyboard-front"
+          onclick="zoomIn(this)"
+        />
+      </div>
+
+      <div class="posts">
+        <h3>3D printed majoras mask</h3>
+        <p>
+          While not really a hardware project, I did 3D print a majoras mask.
+          It's a model found on thingiverse. I printed it on my modified Ender 3
+          Pro. It took about 2 days to print.
+        </p>
+        <p>
+          I used a 0.4mm nozzle and 0.2mm layer height. The filament is PLA. In
+          hindsight I should've used a 0.6mm nozzle to speed things up.
+        </p>
+        <img
+          src="/img/majora_pieces.jpg"
+          alt="majoras-mask"
+          onclick="zoomIn(this)"
+        />
+        <img
+          src="/img/majora_together.jpg"
+          alt="majoras-mask"
+          onclick="zoomIn(this)"
+        />
+        <img
+          src="/img/majora_basecolor.jpg"
+          alt="majoras-mask"
+          onclick="zoomIn(this)"
+        />
+        <img
+          src="/img/majora_finished.jpg"
+          alt="majoras-mask"
+          onclick="zoomIn(this)"
+        />
+      </div>
+      <div class="posts">
+        <h3>Replacing Macbook pro batteries are a pain</h3>
+        <p>
+          I was tasked to replace a Macbook Pro battery. It was a pain to do.
+        </p>
+        <p>
+          The battery was glued to the case unlike the Macbook Air or any laptop
+          for that matter...
+        </p>
+        <p>
+          I had to use rubbing alcohol, I then had to pry the battery out with a
+          spudger. Boy, that doest feel safe. I mean what if you tear the
+          battery in the process? That would be a disaster.
+          <img
+            src="/img/macbook_pro.jpg"
+            alt="majoras-mask"
+            onclick="zoomIn(this)"
+          />
+        </p>
+      </div>
+      <div class="posts">
+        <h3>Raspberry Pi Zero webserver</h3>
+        <p>This website is hosted on a Raspberry Pi Zero W</p>
+        <p>A Raspberry Pi </p>
+
+        <img
+          src="/img/macbook_pro.jpg"
+          alt="majoras-mask"
+          onclick="zoomIn(this)"
+        />
       </div>
     </main>
 
