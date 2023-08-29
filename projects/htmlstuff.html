@@ -1,79 +1,89 @@
 <!DOCTYPE html>
 <html lang="sv">
+  <head>
+    <title>Welcome to Palmfeldt</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <style></style>
+  </head>
 
-<head>
-  <title>Welcome to Palmfeldt</title>
-  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/style.css">
-  <style>
-		
-	</style>
-</head>
+  <body>
+    <nav>
+      <h1 id="palmfeldtTitle">Palmfeldt</h1>
+      <ul id="globnav">
+        <li><a href="/index.html">Startpage</a></li>
+        <li>
+          <a href="/projects.html" class="currentPage">Projects</a>
+        </li>
+        <li><a href="/about.html">About Me</a></li>
+        <li><a href="/win/">Windows 98 Alva Edition</a></li>
+      </ul>
+      <ul id="locnav">
+        <li><a href="/projects/pythonstuff.html">Python stuff</a></li>
+        <li>
+          <a href="/projects/htmlstuff.html" class="currentPage"
+            >Front-end stuff</a
+          >
+        </li>
+        <li><a href="/projects/fullstackstuff.html">Full-stack stuff</a></li>
+        <li><a href="/projects/hardwarestuff.html">Hardware stuff</a></li>
+      </ul>
+    </nav>
 
-<body>
-  
-  <nav>
-    <h1 id="palmfeldtTitle">Palmfeldt</h1>
-    <ul id="globnav">
-      <li><a href="/index.html">Startpage</a></li>
-      <li><a href="/projects.html" class="currentPage">Current projects</a></li>
-      <li><a href="/about.html">About Me</a></li>
-      <li><a href="/win/">Windows 98 Alva Edition</a></li>
-    </ul>
-    <ul id="locnav">
-      <li><a href="/projects/pythonstuff.html">Python stuff</a></li>
-      <li><a href="/projects/htmlstuff.html" class="currentPage">Front-end stuff</a></li>
-      <li><a href="/projects/fullstackstuff.html">Full-stack stuff</a></li>
-      <li><a href="/projects/hardwarestuff.html">Hardware stuff</a></li>
-    </ul>
-  </nav>
+    <main>
+      <script src="/js/zoom.js"></script>
+      <!-- Modal -->
+      <div id="myModal" class="modal">
+        <span class="modal-close" onclick="zoomOut();">&times;</span>
+        <img id="modalImg" class="modal-content" />
+      </div>
 
-  <main>
-    <script src="/js/zoom.js"></script>
-    <!-- Modal -->
-    <div id="myModal" class="modal">
-      <span class="modal-close" onclick="zoomOut();">&times;</span>
-      <img id="modalImg" class="modal-content">
-    </div>
+      <div class="titles">
+        <h2>Front-end projects</h2>
+        <p>
+          These projects all revolve around HTML, CSS and or front-end
+          JavaScript
+        </p>
+      </div>
+      <div class="posts">
+        <h3>Windows-98-JS</h3>
+        <p>
+          As part of a assignment in a webprogramming course, we were tasked to
+          create a window manager environment in clientside javascript.
+        </p>
+        <p>
+          As such I created an environment that is supposed to look like Windows
+          98. I found it rather fun to work with the assignment and as such spun
+          it of as a public repository instead.
+        </p>
+        <p>
+          You can find the entire project on my GitHub. There is also a hosted
+          version on this website, it is one of the navigation bar.
+        </p>
+        <p>
+          In the future, the project will probably not be named Alva edition (as
+          that sounds like some sort of god complex).
+        </p>
+        <img
+          src="/img/win-post.png"
+          alt="windows-98-js"
+          onclick="zoomIn(this)"
+        />
+      </div>
+      <div class="posts">
+        <h3>Current status</h3>
+        <p>
+          As of right now there really isnt that much to talk about here. You
+          can checkout the Current projects to see what I'm currently doing.
+          Note that this website in it self is WIP which means that it will
+          update in the future.
+        </p>
+      </div>
+    </main>
 
-    <div class="titles">
-      <h2>Front-end projects</h2>
-      <p>These projects all revolve around HTML, CSS and or front-end JavaScript</p>
-    </div>
-    <div class="posts">
-      <h3>Windows-98-JS</h3>
-      <p>As part of a assignment in a webprogramming course, we were tasked to create a window manager enviroment in
-        clientside javascript.</p>
-      <p>As such I created an enviroment that is supposed to look like Windows 98. I found it rather fun to work with
-        the assignmnet and as such spun it of as a public repository instead. </p>
-      <p>You can find the entire project on my GitHub. There is also a hosted version on this website, it is one of the
-        navigation bar.</p>
-      <p>In the future, the project will probably not be named Alva edition (as that sounds like some sort of god
-        complex).</p>
-      <img src="/img/win-post.png" alt="windows-98-js" onclick="zoomIn(this)">
-    </div>
-    <div class="posts">
-      <h3>Current status</h3>
-      <p>As of right now there really isnt that much to talk about here. You can checkout the Current projects to
-        see what I'm currently doing. Note that this website in it self is WIP which means that it will update
-        in the future.</p>
-    </div>
-  </main>
-
-  <footer>
-    <p>E-Mailaddress: <a href="mailto:alva@palmfeldt.se">alva@palmfeldt.se</a></p>
-    <div id="linkedIn">
-      <p>My LinkedIn
-        <a href="https://www.linkedin.com/in/alva-widerberg-palmfeldt-393a41261/">
-          <img class="socialMediaIcon" src="/img/linked.png" alt="linkedin-logo">
-        </a>
-      </p>
-    </div>
-    <p>Latest website update: 2023-03</p>
-    <p class="tiny">I'll probably forget to change this date, hehe</p>
-  </footer>
-</body>
-
+    <footer></footer>
+    <script type="module" src="../js/loadElements.js"></script>
+  </body>
 </html>
