@@ -12,7 +12,18 @@ html {
     padding: 0;
 }
 
+#linkedIn img {
+    width: 30px;
+    height: auto;
+}
+
+
 body {
+    background-image: url("../img/back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #1f2a3c;
+    background-size: 100%;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
@@ -97,4 +108,29 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* Media query  */
+@media (max-width: 750px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .hero {
+        padding: 3rem 0;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .posts article {
+        padding: 1rem;
+    }
 }
