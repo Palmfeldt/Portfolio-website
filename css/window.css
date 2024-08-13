@@ -1,0 +1,70 @@
+.subsection {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  color: #4b4b4b;
+
+}
+
+.msBorderContainer {
+  background-color: #f5e9f3;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+.msInsideContainer { 
+  border-style: solid;
+  border-top: hidden;
+  border-bottom: hidden;
+  border-width: 2px;
+  border-radius: 5px;
+  background-color: #f5e9f3;
+  padding: 10px;
+}
+
+.winMainWindow {
+  width: 650px;
+  border: 2px solid #000; /* Black border */
+  border-radius: 8px;
+  box-shadow: 2px 2px 0px #808080, -2px -2px 0px #fff; /* 3D border effect */
+}
+
+.msTitle {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-style: solid;
+  background-color: #f9c8c8;
+  color: #FFF; /* White text */
+  padding: 5px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.msTitlebuttonBox {
+  display: flex;
+  gap: 4px;
+}
+
+.msTitlebuttonBox button {
+  width: 16px;
+  height: 16px;
+  background-color: #f7d1d1;
+  border: 2px solid #000;
+  border-radius: 4px;
+  
+  box-shadow: 1px 1px 0px #808080, -1px -1px 0px #FFF; /* 3D button effect */
+  font-size: 12px;
+  text-align: center;
+  line-height: 14px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.msTitlebuttonBox button:hover {
+  background-color: #fdf4e4; /* Dark blue background on hover */
+  color: #FFF; /* White text on hover */
+}

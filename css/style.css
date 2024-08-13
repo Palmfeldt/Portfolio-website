@@ -1,9 +1,18 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600&display=swap');
 
 html {
     font-size: 16px;
     box-sizing: border-box;
+}
+
+body,
+.mainspace,
+.posts article {
+    color: #4b4b4b;
+    /* Softer gray */
+    padding: 2.5rem 2rem;
+    /* Increase padding */
 }
 
 *,
@@ -21,15 +30,19 @@ html {
 
 
 body {
-    background-image: url("../img/back.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: #1f2a3c;
+    background-color: rgba(248, 248, 248, 0.5);
+    /* Soft overlay */
     background-size: 100%;
-    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(to bottom right, #fdf4e4, #f8e8e8);
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 300;
+    /* Light font weight */
+    letter-spacing: 0.5px;
+    /* Slightly increased spacing */
     line-height: 1.6;
     background-color: #f4f4f4;
-    color: #333;
+    color: #4b4b4b;
+    /* Softer text color */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -42,8 +55,10 @@ body {
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: #f9c8c8;
+    /* Light pastel pink */
+    color: #4b4b4b;
+    /* Darker gray for contrast */
     padding: 1rem 0;
 }
 
@@ -65,7 +80,11 @@ nav ul {
 }
 
 nav a {
-    color: #fff;
+    transition: background 0.5s ease, transform 0.2s ease;
+    color: #4b4b4b;
+    /* Matching the text color */
+    background: #f9e2e2;
+    /* Very light pastel pink */
     text-decoration: none;
     padding: 0.5rem 1rem;
     transition: background 0.3s ease;
@@ -73,17 +92,24 @@ nav a {
 
 nav a:hover,
 nav a.currentPage {
-    background: #555;
+    background: #f7d1d1;
+    /* Slightly darker pastel pink */
     border-radius: 5px;
+    transform: scale(1.05);
+    /* Slight zoom on hover */
 }
 
-.hero {
-    color: #fff;
+.mainspace {
+    background: #fdf4e4;
+    clip-path: ellipse(75% 100% at 50% 0%);
+    /* Example of curved section */
+    background-color: #fdf4e4;
+    /* Light pastel yellow */
     padding: 5rem 0;
     text-align: center;
 }
 
-.hero h2 {
+.mainspace h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
@@ -92,15 +118,28 @@ nav a.currentPage {
     padding: 2rem 0;
 }
 
+.posts article,
+nav a {
+    border-radius: 10px;
+    /* More rounded corners */
+}
+
 .posts article {
-    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    /* Very light shadow */
+    background: #f5e9f3;
+    /* Softer gray */
     padding: 1.5rem;
     margin-bottom: 1rem;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
 }
 
-
+header,
+.posts article {
+    opacity: 0.95;
+    /* Slight transparency */
+}
 
 /* Media query  */
 @media (max-width: 750px) {
