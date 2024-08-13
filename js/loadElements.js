@@ -4,6 +4,7 @@
 // footer content
 let footerHtml = `
     <p>E-Mailaddress: <a href="mailto:alva@palmfeldt.se">alva@palmfeldt.se</a></p>
+    <link rel="stylesheet" href="css/footer.css">
     <div id="linkedIn">
       <p>My LinkedIn
         <a href="https://www.linkedin.com/in/alva-widerberg-palmfeldt-393a41261/">
