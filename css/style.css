@@ -10,9 +10,7 @@ body,
 .mainspace,
 .posts article {
     color: #4b4b4b;
-    /* Softer gray */
     padding: 2.5rem 2rem;
-    /* Increase padding */
 }
 
 *,
@@ -28,29 +26,23 @@ body,
     height: auto;
 }
 
-
 body {
-    background-color: rgba(248, 248, 248, 0.5);
-    /* Soft overlay */
     background-size: 100%;
     background-image: linear-gradient(to bottom right, #fdf4e4, #f8e8e8);
     font-family: 'Fredoka', sans-serif;
     font-weight: 300;
-    /* Light font weight */
     letter-spacing: 0.5px;
-    /* Slightly increased spacing */
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #4b4b4b;
-    /* Softer text color */
+
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Ändra denna i framtiden */
     min-height: 100vh;
 }
 
 .container {
     width: 90%;
-    max-width: 1200px;
     margin: 0 auto;
 }
 

@@ -4,14 +4,14 @@ footer {
   text-align: center;
   padding: 2rem 0; /* Increased padding for more space */
   margin-top: auto;
-  border-radius: 10px 10px 0 0; /* Rounded corners at the top */
-  opacity: 0.95; /* Slight transparency */
-  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+  border-radius: 10px 10px 0 0; 
+  opacity: 0.95; 
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05); 
 }
 
 footer p {
-  margin: 0.5rem 0; /* Added spacing between paragraphs */
-  font-weight: 300; /* Light font weight for a softer look */
+  margin: 0.5rem 0;
+  font-weight: 300;
 }
 
 footer a {

@@ -68,3 +68,11 @@
   background-color: #fdf4e4; /* Dark blue background on hover */
   color: #FFF; /* White text on hover */
 }
+
+.msButtons img {
+  cursor:pointer;
+  width:12px;
+  height:12px;
+
+
+}
