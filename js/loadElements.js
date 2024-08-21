@@ -16,10 +16,9 @@ let footerHtml = `
 
 let myWindow = `<div>
 <link rel="stylesheet" href="css/window.css">
-<div class="subsection">
-  <div class="winMainWindow">
+  <div class="msWindow">
     <div class="msTitle">
-      <p>About me</p>
+      <p>palmfeldt_info.exe</p>
       <div class="msTitlebuttonBox">
         <button class="msButtons"><img src="/img/WIN/MINIMIZE.png"/></button>
         <button class="msButtons"><img src="/img/WIN/RESIZE.png"/></button>
@@ -40,39 +39,18 @@ let myWindow = `<div>
         passion for webprogramming.
 
       </p>
-      <p>
-        I find aesthetic of old software somewhat charming and I get a lot of
-        inspiration from old Windows operating systems.
-      </p>
-      <p>
-        While I'm not that great at webprogramming, I find the subject
-        interesting. The idea of having the ability of creating a fully fledged application that can be accessed on
-        most devices seemed amazing. As such I currently work within fullstack programming.
-        I've made this website from scratch. You can find this and other projects at my
-        <a href="https://github.com/palmfeldt">GitHub repository</a>
-      </p>
-      <p>
-        I would describe myself as having a "hacker mindset". I always try to
-        find ways to bypass, break or hack things. And then there is the less
-        fun part of reporting things.
-      </p>
-      <p>
-        Feel free to check out some of the current projects I have. They can be
-        found in the <a href="/projects.html">Project</a> part of the webpage
-      </p>
-    </div>
+    
   </div>`
 
-  
 
-
-// document.getElementById('sidebar').innerHTML = footerHtml;
+document.getElementById('footer').innerHTML = footerHtml;
+document.getElementById('sidebar').innerHTML = myWindow;
 
 
 function lightDarkSwitch(bool) {
   if (bool) {
     themeSwitch.innerHTML = '<img src="/img/icons/theme-light.svg" class="imgswitchLight" alt="theme-switch">';
-  } else{
+  } else {
     themeSwitch.innerHTML = '<img src="/img/icons/theme-dark.svg" class="imgswitchDark" alt="theme-switch">';
   }
 }
@@ -82,14 +60,14 @@ lightDarkSwitch(false)
 /**
  * TODO Functtion to switch theme
  */
-themeSwitch.addEventListener('click', function() {
-//   let theme = document.getElementById('theme');
-//   if (theme.getAttribute('href') == 'css/light.css') {
-//     theme.href = 'css/dark.css';
-//   } else {
-//     theme.href = 'css/light.css';
-//   }
-lightDarkSwitch(!themeSwitch.innerHTML.includes('light'));
+themeSwitch.addEventListener('click', function () {
+  //   let theme = document.getElementById('theme');
+  //   if (theme.getAttribute('href') == 'css/light.css') {
+  //     theme.href = 'css/dark.css';
+  //   } else {
+  //     theme.href = 'css/light.css';
+  //   }
+  lightDarkSwitch(!themeSwitch.innerHTML.includes('light'));
 
 }
 );

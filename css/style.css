@@ -21,11 +21,6 @@ body,
     padding: 0;
 }
 
-#linkedIn img {
-    width: 30px;
-    height: auto;
-}
-
 body {
     background-size: 100%;
     background-image: linear-gradient(to bottom right, #fdf4e4, #f8e8e8);
@@ -45,6 +40,17 @@ body {
 .container {
     width: 90%;
     margin: 0 auto;
+}
+
+#sidebar {
+    position: fixed;
+    z-index: 10;
+
+}
+
+#mainContent {
+    margin-left: 350px;
+    padding: 1rem;
 }
 
 #navbar {
@@ -167,11 +173,11 @@ nav a {
         gap: 0.5rem;
     }
 
-    .hero {
+    .container {
         padding: 3rem 0;
     }
 
-    .hero h2 {
+    .container h2 {
         font-size: 2rem;
     }
 

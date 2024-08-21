@@ -1,15 +1,19 @@
-.subsection {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  color: #4b4b4b;
+.msWindow {
+  position: absolute;
+  left: 0px;
+  top: 100px;
+  width: 350px;
 
+  border: 2px solid #000; /* Black border */
+  border-radius: 8px;
+  box-shadow: 2px 2px 0px #b09d9d, -2px -2px 0px #fff; /* 3D border effect */
 }
 
 .msBorderContainer {
   background-color: #f5e9f3;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 100%;
 
 }
 
@@ -19,15 +23,9 @@
   border-bottom: hidden;
   border-width: 2px;
   border-radius: 5px;
+  
   background-color: #f5e9f3;
   padding: 10px;
-}
-
-.winMainWindow {
-  width: 650px;
-  border: 2px solid #000; /* Black border */
-  border-radius: 8px;
-  box-shadow: 2px 2px 0px #808080, -2px -2px 0px #fff; /* 3D border effect */
 }
 
 .msTitle {
@@ -73,6 +71,4 @@
   cursor:pointer;
   width:12px;
   height:12px;
-
-
 }
