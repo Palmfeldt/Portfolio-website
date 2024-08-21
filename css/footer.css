@@ -1,12 +1,13 @@
 footer {
-  background: #f9c8c8; /* Light pastel pink */
-  color: #4b4b4b; /* Softer text color */
+  background: #f9c8c8;
+  color: #4b4b4b;
   text-align: center;
-  padding: 2rem 0; /* Increased padding for more space */
+  padding: 2rem 0;
+
   margin-top: auto;
-  border-radius: 10px 10px 0 0; 
-  opacity: 0.95; 
-  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05); 
+  border-radius: 10px 10px 0 0;
+  opacity: 0.95;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
 }
 
 footer p {
@@ -15,15 +16,17 @@ footer p {
 }
 
 footer a {
-  color: #4b4b4b; /* Softer link color */
+  color: #4b4b4b;
+  /* Softer link color */
   text-decoration: none;
-  border-bottom: 1px dotted #4b4b4b; /* Dotted underline for links */
+  border-bottom: 1px dotted #4b4b4b;
+  /* Dotted underline for links */
   transition: color 0.3s ease, border-color 0.3s ease;
 }
 
 footer a:hover {
-  color: #333; /* Slightly darker color on hover */
-  border-color: #333; /* Change underline color on hover */
+  color: #333;
+  border-color: #333;
 }
 
 #linkedIn p {
@@ -37,5 +40,5 @@ footer a:hover {
 }
 
 .socialMediaIcon:hover {
-  transform: scale(1.1); /* Slight zoom effect on hover */
+  transform: scale(1.1);
 }

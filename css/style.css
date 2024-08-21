@@ -37,7 +37,8 @@ body {
     color: #4b4b4b;
 
     display: flex;
-    flex-direction: column; /* Ändra denna i framtiden */
+    flex-direction: column;
+    /* Ändra denna i framtiden */
     min-height: 100vh;
 }
 
@@ -46,21 +47,36 @@ body {
     margin: 0 auto;
 }
 
-header {
+#navbar {
+    z-index: 10;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    border-radius: 50px;
     background: #f9c8c8;
     /* Light pastel pink */
     color: #4b4b4b;
     /* Darker gray for contrast */
-    padding: 1rem 0;
+    padding: 1rem;
+    opacity: 0.95;
+
 }
 
-header .container {
+#navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#palmfeldtTitle {
+#globnav li a {
+    font-size: large;
+    font-weight: bolder;
+}
+
+#titleText {
     font-size: 1.5rem;
     font-weight: 600;
 }
@@ -93,8 +109,8 @@ nav a.currentPage {
 
 .mainspace {
     background: #fdf4e4;
+    /* Light pastel yellow elipse */
     clip-path: ellipse(75% 100% at 50% 0%);
-    /* Example of curved section */
     background-color: #fdf4e4;
     /* Light pastel yellow */
     padding: 5rem 0;
@@ -108,12 +124,25 @@ nav a.currentPage {
 
 .posts {
     padding: 2rem 0;
+    opacity: 0.95;
 }
 
 .posts article,
 nav a {
     border-radius: 10px;
     /* More rounded corners */
+}
+
+.imgswitchLight {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.imgswitchDark {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s ease;
 }
 
 .posts article {
@@ -124,18 +153,11 @@ nav a {
     padding: 1.5rem;
     margin-bottom: 1rem;
     border-radius: 5px;
-
-}
-
-header,
-.posts article {
-    opacity: 0.95;
-    /* Slight transparency */
 }
 
 /* Media query  */
 @media (max-width: 750px) {
-    header .container {
+    #navbar .container {
         flex-direction: column;
         align-items: flex-start;
     }

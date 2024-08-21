@@ -66,5 +66,30 @@ let myWindow = `<div>
   
 
 
-document.querySelectorAll('footer')[0].innerHTML = footerHtml;
-// document.querySelectorAll('.posts')[0].appendChild(myWindow);
+// document.getElementById('sidebar').innerHTML = footerHtml;
+
+
+function lightDarkSwitch(bool) {
+  if (bool) {
+    themeSwitch.innerHTML = '<img src="/img/icons/theme-light.svg" class="imgswitchLight" alt="theme-switch">';
+  } else{
+    themeSwitch.innerHTML = '<img src="/img/icons/theme-dark.svg" class="imgswitchDark" alt="theme-switch">';
+  }
+}
+
+lightDarkSwitch(false)
+
+/**
+ * TODO Functtion to switch theme
+ */
+themeSwitch.addEventListener('click', function() {
+//   let theme = document.getElementById('theme');
+//   if (theme.getAttribute('href') == 'css/light.css') {
+//     theme.href = 'css/dark.css';
+//   } else {
+//     theme.href = 'css/light.css';
+//   }
+lightDarkSwitch(!themeSwitch.innerHTML.includes('light'));
+
+}
+);
