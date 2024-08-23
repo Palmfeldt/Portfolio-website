@@ -17,11 +17,14 @@
 
 }
 
-.msInsideContainer { 
-
-
+.msInsideContainer {
   background-color: #f5e9f3;
   padding: 10px;
+}
+
+.msInsideContainer p {
+  padding-bottom: 5px;
+  margin: 0;
 }
 
 .msTitle {

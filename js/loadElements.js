@@ -14,11 +14,11 @@ let footerHtml = `
 `;
 
 
-let myWindow = `<div>
+let myWindow = `<div class="popupMSWindow">
 <link rel="stylesheet" href="css/window.css">
   <div class="msWindow">
     <div class="msTitle">
-      <p>secrets.exe</p>
+      <p>hello.bat</p>
       <div class="msTitlebuttonBox">
         <button class="msButtons"><img src="/img/WIN/MINIMIZE.png"/></button>
         <button class="msButtons"><img src="/img/WIN/RESIZE.png"/></button>
@@ -34,19 +34,8 @@ let myWindow = `<div>
     <div class="msBorderContainer">
     <div class="msInsideContainer">
       <p>Hi, my name is Alva Palmfeldt.</p>
-      <p>
-        I'm a 23 year old post graduate student from Sweden and live in Växjö. I'm studied
-        at Linnaeus University in Växjö within the Network security
-        program.
-      </p>
-
-      <p>
-        I love everything to do with IT hardware, hacking, pentesting but also found a
-        passion for webprogramming.
-
-      </p>
-    
   </div>
+
   <div class="popupMSWindow">
 <link rel="stylesheet" href="css/window.css">
   <div class="msWindow">
@@ -66,10 +55,9 @@ let myWindow = `<div>
     </div>
     <div class="msBorderContainer">
     <div class="msInsideContainer">
-      <p>Hi, my name is Alva Palmfeldt.</p>
       <p>
-        I'm a 23 year old post graduate student from Sweden and live in Växjö. I'm studied
-        at Linnaeus University in Växjö within the Network security
+        I'm a 23 year old post graduate student from Sweden. I've studied
+        at Linnaeus University in Växjö and have a bachelor's degree in Network security
         program.
       </p>
 
