@@ -18,12 +18,51 @@ let myWindow = `<div>
 <link rel="stylesheet" href="css/window.css">
   <div class="msWindow">
     <div class="msTitle">
+      <p>secrets.exe</p>
+      <div class="msTitlebuttonBox">
+        <button class="msButtons"><img src="/img/WIN/MINIMIZE.png"/></button>
+        <button class="msButtons"><img src="/img/WIN/RESIZE.png"/></button>
+        <button class="msButtons"><img src="/img/WIN/CLOSE.png"/></button>
+      </div>
+    </div>
+    <div class="msSelection">
+    <p>File</p>
+    <p>Edit</p>
+    <p>View</p>
+    <p>Help</p>
+    </div>
+    <div class="msBorderContainer">
+    <div class="msInsideContainer">
+      <p>Hi, my name is Alva Palmfeldt.</p>
+      <p>
+        I'm a 23 year old post graduate student from Sweden and live in Växjö. I'm studied
+        at Linnaeus University in Växjö within the Network security
+        program.
+      </p>
+
+      <p>
+        I love everything to do with IT hardware, hacking, pentesting but also found a
+        passion for webprogramming.
+
+      </p>
+    
+  </div>
+  <div class="popupMSWindow">
+<link rel="stylesheet" href="css/window.css">
+  <div class="msWindow">
+    <div class="msTitle">
       <p>palmfeldt_info.exe</p>
       <div class="msTitlebuttonBox">
         <button class="msButtons"><img src="/img/WIN/MINIMIZE.png"/></button>
         <button class="msButtons"><img src="/img/WIN/RESIZE.png"/></button>
         <button class="msButtons"><img src="/img/WIN/CLOSE.png"/></button>
       </div>
+    </div>
+        <div class="msSelection">
+    <p>File</p>
+    <p>Edit</p>
+    <p>View</p>
+    <p>Help</p>
     </div>
     <div class="msBorderContainer">
     <div class="msInsideContainer">
