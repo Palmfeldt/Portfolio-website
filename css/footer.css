@@ -1,14 +1,25 @@
 #footer {
-  padding: 1rem;
+  padding-top: 1rem;
   background: #f9c8c8;
   color: #4b4b4b;
   text-align: center;
-  padding: 2rem 0;
-
+  padding: 1rem 0;
   margin-top: auto;
   border-radius: 10px 10px 0 0;
   opacity: 0.95;
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 #footer p {
@@ -42,4 +53,8 @@
 
 .socialMediaIcon:hover {
   transform: scale(1.1);
+}
+
+.tiny {
+  font-size: 0.8rem;
 }

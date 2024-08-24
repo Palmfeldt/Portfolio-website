@@ -1,6 +1,7 @@
 // footer content
 let footerHtml = `
 <link rel="stylesheet" href="css/footer.css">
+<div class="wrapper">
     <p>E-Mailaddress: <a href="mailto:alva@palmfeldt.se">alva@palmfeldt.se</a></p>
     <div id="linkedIn">
       <p>My LinkedIn
@@ -9,8 +10,11 @@ let footerHtml = `
         </a>
       </p>
     </div>
+    <div>
     <p>Latest website update: 2024-08</p>
     <p class="tiny">I'll probably forget to change this date, hehe</p>
+    </div>
+    </div>
 `;
 
 
