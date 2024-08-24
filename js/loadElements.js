@@ -1,26 +1,10 @@
-// footer content
-let footerHtml = `
-<div class="wrapper">
-    <p>E-Mailaddress: <a href="mailto:alva@palmfeldt.se">alva@palmfeldt.se</a></p>
-    <div id="linkedIn">
-      <p>My LinkedIn
-        <a href="https://www.linkedin.com/in/alva-widerberg-palmfeldt-393a41261/">
-          <img class="socialMediaIcon" src="/img/linked.png" alt="linkedin-logo">
-        </a>
-      </p>
-    </div>
-    <div>
-    <p>Latest website update: 2024-08</p>
-    <p class="tiny">I'll probably forget to change this date, hehe</p>
-    </div>
-    </div>
-`;
 
 
-let myWindow = `
+function windowMaker(title, content) {
+  return `
   <div class="msWindow">
   <div class="msTitle">
-    <p>hello.bat</p>
+    <p>${title}</p>
     <div class="msTitlebuttonBox">
       <button class="msButtons"><img src="/img/WIN/MINIMIZE.png" /></button>
       <button class="msButtons"><img src="/img/WIN/RESIZE.png" /></button>
@@ -37,44 +21,26 @@ let myWindow = `
   
   <div class="msBorderContainer">
     <div class="msInsideContainer">
-      <p>Hi, my name is Alva Palmfeldt.</p>
+      <p>${content}</p>
     </div>
   </div>
-</div>
+  `
+}
 
-<div class="msWindow">
-  <div class="msTitle">
-    <p>palmfeldt_info.exe</p>
-    <div class="msTitlebuttonBox">
-      <button class="msButtons"><img src="/img/WIN/MINIMIZE.png" /></button>
-      <button class="msButtons"><img src="/img/WIN/RESIZE.png" /></button>
-      <button class="msButtons"><img src="/img/WIN/CLOSE.png" /></button>
-    </div>
-  </div>
-  
-  <div class="msSelection">
-    <p>File</p>
-    <p>Edit</p>
-    <p>View</p>
-    <p>Help</p>
-  </div>
-  
-  <div class="msBorderContainer">
-    <div class="msInsideContainer">
-      <p>
+let aboutMe = `<p>
         I'm a 23 year old post graduate student from Sweden. I've studied at Linnaeus University in Växjö and have a bachelor's degree in Network security program.
       </p>
       <p>
         I love everything to do with IT hardware, hacking, pentesting but also found a passion for webprogramming.
-      </p>
-    </div>
-  </div>
-</div>
-
-`
+      </p>`
 
 
-document.getElementById('footer').innerHTML = footerHtml;
+let paint = ``
+
+
+let myWindow = windowMaker("hello-world.exe", "Hello, my name is Alva Palmfeldt")
+myWindow += windowMaker("hello-world.exe", aboutMe)
+
 document.getElementById('sidebar').innerHTML = myWindow;
 
 

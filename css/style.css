@@ -9,7 +9,8 @@ body,
 .updatesTitle,
 .posts article {
     color: #4b4b4b;
-    padding: 2.5rem 2rem;
+
+    padding: 2rem 2rem;
 }
 
 *,
@@ -17,6 +18,7 @@ body,
 *::after {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -34,9 +36,10 @@ body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
-.container {
+.padder {
     width: 90%;
     margin: 0 auto;
 }
@@ -53,6 +56,7 @@ body {
 }
 
 #navbar {
+    margin-left: 1rem;
     border-radius: 50px;
     background: #f9c8c8;
     /* Light pastel pink */
@@ -63,7 +67,7 @@ body {
 
 }
 
-#navbar .container {
+#navbar .padder {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,13 +109,16 @@ nav a.currentPage {
     /* Slight zoom on hover */
 }
 
+#themeSwitch {
+    padding-right: 5px;
+}
+
 .updatesTitle {
     background: #fdf4e4;
     /* Light pastel yellow elipse */
     clip-path: ellipse(75% 100% at 50% 0%);
     background-color: #fdf4e4;
     /* Light pastel yellow */
-    padding: 5rem 0;
     text-align: center;
 }
 
@@ -123,14 +130,11 @@ nav a.currentPage {
 .posts {
     padding: 2rem 0;
     opacity: 0.95;
-
 }
 
 .posts article,
 nav a {
     border-radius: 10px;
-
-    /* More rounded corners */
 }
 
 .imgswitchLight {
@@ -153,13 +157,66 @@ nav a {
     padding: 1.5rem;
     margin-bottom: 1rem;
     border-radius: 5px;
-    /* Temp padding til posts are done */
-    padding-bottom: 50px;
+
+}
+
+#footer {
+    background: #f9c8c8;
+    color: #4b4b4b;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    opacity: 0.95;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding: 1rem;
+}
+
+#footer p {
+    margin: 0.5rem 0;
+    font-weight: 300;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#footer a {
+    color: #4b4b4b;
+    /* Softer link color */
+    text-decoration: none;
+    border-bottom: 1px dotted #4b4b4b;
+    /* Dotted underline for links */
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+#footer a:hover {
+    color: #333;
+    border-color: #333;
+}
+
+#linkedIn p {
+    margin: 1rem 0;
+}
+
+.socialMediaIcon {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.socialMediaIcon:hover {
+    transform: scale(1.1);
+}
+
+.tiny {
+    font-size: 0.8rem;
 }
 
 /* Media query  */
 @media (max-width: 750px) {
-    #navbar .container {
+    #navbar .padder {
         flex-direction: column;
         align-items: flex-start;
     }
@@ -169,11 +226,11 @@ nav a {
         gap: 0.5rem;
     }
 
-    .container {
+    .padder {
         padding: 3rem 0;
     }
 
-    .container h2 {
+    .padder h2 {
         font-size: 2rem;
     }
 
