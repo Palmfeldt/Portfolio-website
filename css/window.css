@@ -1,9 +1,5 @@
 .msWindow {
-  position: absolute;
-  left: 0px;
-  top: 100px;
   width: 350px;
-
   border: 2px solid #555555; /* Black border */
   border-radius: 8px;
   box-shadow: 2px 2px 0px #b09d9d, -2px -2px 0px #fff; /* 3D border effect */
@@ -13,8 +9,6 @@
   background-color: #f5e9f3;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 50%;
-
 }
 
 .msInsideContainer {

@@ -3,11 +3,10 @@
 
 html {
     font-size: 16px;
-    box-sizing: border-box;
 }
 
 body,
-.mainspace,
+.updatesTitle,
 .posts article {
     color: #4b4b4b;
     padding: 2.5rem 2rem;
@@ -16,12 +15,12 @@ body,
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
     margin: 0;
     padding: 0;
 }
 
 body {
+    display: flex;
     background-size: 100%;
     background-image: linear-gradient(to bottom right, #fdf4e4, #f8e8e8);
     font-family: 'Fredoka', sans-serif;
@@ -29,11 +28,12 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #4b4b4b;
+}
 
+#formattedBox {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    /* Ändra denna i framtiden */
-    min-height: 100vh;
 }
 
 .container {
@@ -42,23 +42,17 @@ body {
 }
 
 #sidebar {
-    position: fixed;
+    position: sticky;
+    top: 0;
     z-index: 10;
 }
 
 #mainContent {
-    margin-left: 350px;
+    flex-grow: 1;
     padding: 1rem;
 }
 
 #navbar {
-    width: 95%;
-    z-index: 10;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0px;
-    right: 0px;
-    position: fixed;
     border-radius: 50px;
     background: #f9c8c8;
     /* Light pastel pink */
@@ -111,7 +105,7 @@ nav a.currentPage {
     /* Slight zoom on hover */
 }
 
-.mainspace {
+.updatesTitle {
     background: #fdf4e4;
     /* Light pastel yellow elipse */
     clip-path: ellipse(75% 100% at 50% 0%);
@@ -121,7 +115,7 @@ nav a.currentPage {
     text-align: center;
 }
 
-.mainspace h2 {
+.updatesTitle h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
@@ -129,7 +123,7 @@ nav a.currentPage {
 .posts {
     padding: 2rem 0;
     opacity: 0.95;
-    
+
 }
 
 .posts article,
@@ -186,4 +180,5 @@ nav a {
     .posts article {
         padding: 1rem;
     }
+
 }

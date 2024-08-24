@@ -8,59 +8,66 @@
   <!-- <link rel="icon" type="image/x-icon" href="./img/favicon.ico" /> -->
   <link rel="shortcut icon" href="#">
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/window.css">
+  <link rel="stylesheet" href="css/footer.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="hhttps://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
-<body>
-  <!--This is the navbar-->
-  <header id="navbar">
-    <div class="container">
-      <h1 id="titleText">Palmfeldt</h1>
-      <nav>
-        <ul id="globnav">
-          <li><a href="index.html" class="currentPage">Startpage</a></li>
-          <li><a href="about/">About</a></li>
-          <li><a href="blog/">Blog</a></li>
-          <li><a href="projects.html">Extras</a></li>
-          <li id="themeSwitch"></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
+<body>
   <!--This is the sidebar (AKA the Windows 98 window)-->
   <section id="sidebar"></section>
 
-  <!--This is the main content of the webpage-->
-  <main id="mainContent">
-    <!--This is the banner ontop the posts-->
-    <section class="mainspace">
+  <!-- This is the container for head,content,footer-->
+  <div id="formattedBox">
+    <!--This is the navbar-->
+    <header id="navbar">
       <div class="container">
-        <h2>Updates</h2>
-        <p>Quick summary of my blog</p>
+        <h1 id="titleText">Palmfeldt</h1>
+        <nav>
+          <ul id="globnav">
+            <li><a href="index.html" class="currentPage">Startpage</a></li>
+            <li><a href="about/">About</a></li>
+            <li><a href="blog/">Blog</a></li>
+            <li><a href="projects.html">Extras</a></li>
+            <li id="themeSwitch"></li>
+          </ul>
+        </nav>
       </div>
-    </section>
-    <!--This is the posts part of the main content-->
-    <section class="posts">
-      <div class="container">
-        
-        <article>
-          <h3>Welcome to Palmfeldt.se!</h3>
-          <p>This is the website made by Alva Palmfeldt, a Linnaeus University graduate student in Network Security.
-          </p>
-          <p>I do a little bit of everthing, from software to hardware.</p>
-          <p>Right now this site is a work in progress</p>
-          <p>If you want access to the old website, follow this link: <a href="oldsite"></a> </p>
-        </article>
-  
-      </div>
-    </section>
-    <footer id="footer">
-    </footer>
-  </main>
-  <!--This is the footer of the webpage-->
+    </header>
+    <!--This is the main content of the webpage-->
+    <main id="mainContent">
+      <!--This is the banner ontop the posts-->
+      <section class="updatesTitle">
+        <div class="container">
+          <h2>Updates</h2>
+          <p>Quick summary of my blog</p>
+        </div>
+      </section>
+      <!--This is the posts part of the main content-->
+      <section class="posts">
+        <div class="container">
+
+          <article>
+            <h3>Welcome to Palmfeldt.se!</h3>
+            <p>This is the website made by Alva Palmfeldt, a Linnaeus University graduate student in Network Security.
+            </p>
+            <p>I do a little bit of everthing, from software to hardware.</p>
+            <p>Right now this site is a work in progress</p>
+            <p>If you want access to the old website, follow this link: <a href="oldsite">oldsite</a> </p>
+          </article>
+
+        </div>
+      </section>
+      <footer id="footer">
+      </footer>
+    </main>
+    <!--This is the footer of the webpage-->
+    
+  </div>
+
 
 
   <script type="module" src="js/loadElements.js"></script>
 </body>
+
 </html>

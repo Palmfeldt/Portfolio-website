@@ -1,6 +1,5 @@
 // footer content
 let footerHtml = `
-<link rel="stylesheet" href="css/footer.css">
 <div class="wrapper">
     <p>E-Mailaddress: <a href="mailto:alva@palmfeldt.se">alva@palmfeldt.se</a></p>
     <div id="linkedIn">
@@ -18,60 +17,61 @@ let footerHtml = `
 `;
 
 
-let myWindow = `<div class="popupMSWindow">
-<link rel="stylesheet" href="css/window.css">
+let myWindow = `
   <div class="msWindow">
-    <div class="msTitle">
-      <p>hello.bat</p>
-      <div class="msTitlebuttonBox">
-        <button class="msButtons"><img src="/img/WIN/MINIMIZE.png"/></button>
-        <button class="msButtons"><img src="/img/WIN/RESIZE.png"/></button>
-        <button class="msButtons"><img src="/img/WIN/CLOSE.png"/></button>
-      </div>
+  <div class="msTitle">
+    <p>hello.bat</p>
+    <div class="msTitlebuttonBox">
+      <button class="msButtons"><img src="/img/WIN/MINIMIZE.png" /></button>
+      <button class="msButtons"><img src="/img/WIN/RESIZE.png" /></button>
+      <button class="msButtons"><img src="/img/WIN/CLOSE.png" /></button>
     </div>
-    <div class="msSelection">
+  </div>
+  
+  <div class="msSelection">
     <p>File</p>
     <p>Edit</p>
     <p>View</p>
     <p>Help</p>
-    </div>
-    <div class="msBorderContainer">
+  </div>
+  
+  <div class="msBorderContainer">
     <div class="msInsideContainer">
       <p>Hi, my name is Alva Palmfeldt.</p>
-  </div>
-
-  <div class="popupMSWindow">
-<link rel="stylesheet" href="css/window.css">
-  <div class="msWindow">
-    <div class="msTitle">
-      <p>palmfeldt_info.exe</p>
-      <div class="msTitlebuttonBox">
-        <button class="msButtons"><img src="/img/WIN/MINIMIZE.png"/></button>
-        <button class="msButtons"><img src="/img/WIN/RESIZE.png"/></button>
-        <button class="msButtons"><img src="/img/WIN/CLOSE.png"/></button>
-      </div>
     </div>
-        <div class="msSelection">
+  </div>
+</div>
+
+<div class="msWindow">
+  <div class="msTitle">
+    <p>palmfeldt_info.exe</p>
+    <div class="msTitlebuttonBox">
+      <button class="msButtons"><img src="/img/WIN/MINIMIZE.png" /></button>
+      <button class="msButtons"><img src="/img/WIN/RESIZE.png" /></button>
+      <button class="msButtons"><img src="/img/WIN/CLOSE.png" /></button>
+    </div>
+  </div>
+  
+  <div class="msSelection">
     <p>File</p>
     <p>Edit</p>
     <p>View</p>
     <p>Help</p>
-    </div>
-    <div class="msBorderContainer">
+  </div>
+  
+  <div class="msBorderContainer">
     <div class="msInsideContainer">
       <p>
-        I'm a 23 year old post graduate student from Sweden. I've studied
-        at Linnaeus University in Växjö and have a bachelor's degree in Network security
-        program.
+        I'm a 23 year old post graduate student from Sweden. I've studied at Linnaeus University in Växjö and have a bachelor's degree in Network security program.
       </p>
-
       <p>
-        I love everything to do with IT hardware, hacking, pentesting but also found a
-        passion for webprogramming.
-
+        I love everything to do with IT hardware, hacking, pentesting but also found a passion for webprogramming.
       </p>
-    
-  </div>`
+    </div>
+  </div>
+</div>
+
+`
 
 
 document.getElementById('footer').innerHTML = footerHtml;
