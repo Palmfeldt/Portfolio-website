@@ -9,7 +9,6 @@ body,
 .updatesTitle,
 .posts article {
     color: #4b4b4b;
-
     padding: 2rem 2rem;
 }
 
@@ -102,7 +101,7 @@ nav a {
 
 nav a:hover,
 nav a.currentPage {
-    background: #f7d1d1;
+    background: #ffffff;
     /* Slightly darker pastel pink */
     border-radius: 5px;
     transform: scale(1.05);
@@ -164,7 +163,7 @@ nav a {
     background: #f9c8c8;
     color: #4b4b4b;
     text-align: center;
-    border-radius: 10px 10px 0 0;
+    border-radius: 50px;
     opacity: 0.95;
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
     display: flex;
@@ -177,7 +176,7 @@ nav a {
 
 #footer p {
     margin: 0.5rem 0;
-    font-weight: 300;
+    font-weight: bold;
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -185,6 +184,7 @@ nav a {
 #footer a {
     color: #4b4b4b;
     /* Softer link color */
+    font-weight:lighter;
     text-decoration: none;
     border-bottom: 1px dotted #4b4b4b;
     /* Dotted underline for links */
@@ -212,6 +212,7 @@ nav a {
 
 .tiny {
     font-size: 0.8rem;
+     font-weight: lighter !important;
 }
 
 /* Media query  */
