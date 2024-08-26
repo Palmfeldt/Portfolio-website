@@ -31,7 +31,7 @@ let aboutMe = `<p>
         I'm a 23 year old post graduate student from Sweden. I've studied at Linnaeus University in Växjö and have a bachelor's degree in Network security program.
       </p>
       <p>
-        I love everything to do with IT hardware, hacking, pentesting but also found a passion for webprogramming.
+        I love everything to do with IT hardware, hacking, pentesting but also have a passion for web programming.
       </p>`
 
 
