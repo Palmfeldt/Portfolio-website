@@ -38,7 +38,12 @@ body {
     min-height: 100vh;
 }
 
-.padder {
+.padding {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.formatter {
     width: 90%;
     margin: 0 auto;
 }
@@ -66,7 +71,7 @@ body {
 
 }
 
-#navbar .padder {
+#navbar .formatter {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -213,6 +218,18 @@ nav a {
 .tiny {
     font-size: 0.8rem;
      font-weight: lighter !important;
+}
+
+/*About page */
+.bio {
+    padding: 2rem;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1rem;
+}
+.bio p {
+    margin-bottom: 1rem;
 }
 
 /* Media query  */
