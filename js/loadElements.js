@@ -41,7 +41,7 @@ let paint = ``
 let myWindow = windowMaker("hello-world.exe", "Hello, my name is Alva Palmfeldt")
 myWindow += windowMaker("hello-world.exe", aboutMe)
 
-document.getElementById('sidebar').innerHTML = myWindow;
+document.getElementById('windowSidebar').innerHTML = myWindow;
 
 
 function lightDarkSwitch(bool) {

@@ -1,59 +1,76 @@
 <!DOCTYPE html>
 <html lang="sv">
-  <head>
-    <title>Welcome to Palmfeldt</title>
-    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
-  </head>
 
-  <body>
-    <nav>
-      <h1 id="palmfeldtTitle">Palmfeldt</h1>
-      <ul id="globnav">
-        <li><a href="/index.html">Startpage</a></li>
-        <li>
-          <a href="/projects.html" class="currentPage">Projects</a>
-        </li>
-        <li><a href="/about.html">About Me</a></li>
-        <li><a href="/win/">Windows 98 Alva Edition</a></li>
-      </ul>
-      <ul id="locnav">
-        <li><a href="/projects/pythonstuff.html">Python stuff</a></li>
-        <li><a href="/projects/htmlstuff.html">Front-end stuff</a></li>
-        <li><a href="/projects/fullstackstuff.html">Full-stack stuff</a></li>
-        <li><a href="/projects/hardwarestuff.html">Hardware stuff</a></li>
-      </ul>
-    </nav>
-    <main>
-      <div class="titles">
-        <h2>Current working projects</h2>
-        <p>
-          I find aesthetic of old software somewhat charming and I get a lot of
-          inspiration from old Windows operating systems.
-        </p>
-        <p>
-          While I'm not that great at webprogramming, I find the subject
-          interesting. The idea of having the ability of creating a fully fledged application that can be accessed on
-          most devices seemed amazing. As such I currently work within fullstack programming.
-          I've made this website from scratch. You can find this and other projects at my
-          <a href="https://github.com/palmfeldt">GitHub repository</a>
-        </p>
-        <p>
-          I would describe myself as having a "hacker mindset". I always try to
-          find ways to bypass, break or hack things. And then there is the less
-          fun part of reporting things.
-        </p>
-        <p>
-          Feel free to check out some of the current projects I have. They can be
-          found in the <a href="/projects.html">Project</a> part of the webpage
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alva Palmfeldt - software engineer, hardware hacker and 3d printing enthusiast</title>
+  <!-- <link rel="icon" type="image/x-icon" href="./img/favicon.ico" /> -->
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/window.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--This is the sidebar (AKA the Windows 98 window)-->
+  <section id="sidebar"><div id="headshot">
+  <img src="img/headshot.jpg" alt="Alva Palmfeldt picture" id="headshotImg">
+  </div></section>
+
+  <!-- This is the container for head,content,footer-->
+  <div id="formattedBox">
+    <!--This is the navbar-->
+    <header id="navbar">
+      <div class="padder">
+        <h1 id="titleText">Palmfeldt</h1>
+        <nav>
+          <ul id="globnav">
+            <li><a href="index.html">Startpage</a></li>
+            <li><a href="about.html" class="currentPage">About</a></li>
+
+            <li><a href="projects.html">Extras</a></li>
+            <li id="themeSwitch"></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--This is the main content of the webpage-->
+    <main id="mainContent">
+      <!--This is the banner ontop the posts-->
+      <!--This is the posts part of the main content-->
+      <section class="posts">
+        <div class="padder">
+         
+          <h3>Bio</h3>
+          <p></p>
+          <div class="padder"></div>
+          <h3>Bio TLDR</h3>
+          <p>I write code, I 3d print stuff and I destroy my fingers at bouldering.</p>
+          <div class="padder"></div>
+          <h3>CV</h3>
+        </div>
+      </section>
+
+    </main>
+    <!--This is the footer of the webpage-->
+    <footer id="footer">
+      <p>E-Mailaddress: <a href="mailto:alva@palmfeldt.se">alva@palmfeldt.se</a></p>
+      <div id="linkedIn">
+        <p>My LinkedIn
+          <a href="https://www.linkedin.com/in/alva-widerberg-palmfeldt-393a41261/">
+            <img class="socialMediaIcon" src="/img/linked.png" alt="linkedin-logo">
+          </a>
         </p>
       </div>
-      <p></p>
-    </main>
+      <div>
+        <p>Latest website update: 2024-08</p>
+        <p class="tiny">I'll probably forget to change this date, hehe</p>
+      </div>
+    </footer>
+  </div>
 
-    <footer></footer>
-    <script type="module" src="js/loadElements.js"></script>
-  </body>
+  <script type="module" src="js/loadElements.js"></script>
+</body>
+
 </html>
