@@ -1,30 +1,46 @@
 
 
 export function windowMaker(title, msSelection, content) {
-  return `
+  // Initialize an empty string for msSelection content
+  let msSelectionContent = '';
+
+  if (msSelection.length == 0) {
+    msSelection = ["File", "Edit", "View", "Help"];
+  }
+
+  for (let item of msSelection) {
+    msSelectionContent += `<p>${item}</p>`;
+    console.log(item);
+  }
+  // Loop through the msSelection array and create <p> tags
+  
+
+  // Construct the main HTML string
+  let str = `
   <div class="msWindow">
-  <div class="msTitle">
-    <p>${title}</p>
-    <div class="msTitlebuttonBox">
-      <button class="msButtons"><img src="/img/WIN/MINIMIZE.png" /></button>
-      <button class="msButtons"><img src="/img/WIN/RESIZE.png" /></button>
-      <button class="msButtons"><img src="/img/WIN/CLOSE.png" /></button>
+    <div class="msTitle">
+      <p>${title}</p>
+      <div class="msTitlebuttonBox">
+        <button class="msButtons"><img src="/img/WIN/MINIMIZE.png" /></button>
+        <button class="msButtons"><img src="/img/WIN/RESIZE.png" /></button>
+        <button class="msButtons"><img src="/img/WIN/CLOSE.png" /></button>
+      </div>
+    </div>
+    
+    <div class="msSelection">
+      ${msSelectionContent}
+    </div>
+    
+    <div class="msBorderContainer">
+      <div class="msInsideContainer">
+        <p>${content}</p>
+      </div>
     </div>
   </div>
-  
-  <div class="msSelection">
-    <p>File</p>
-    <p>Edit</p>
-    <p>View</p>
-    <p>Help</p>
-  </div>
-  
-  <div class="msBorderContainer">
-    <div class="msInsideContainer">
-      <p>${content}</p>
-    </div>
-  </div>
-  `
+  `;
+
+  // Return or use the constructed string as needed
+  return str;
 }
 
 

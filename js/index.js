@@ -11,7 +11,7 @@ let aboutMe = `<p>
 
 
 // Move this logic to another function
-let myWindow = windowMaker("hello-world.exe", "", "Hello, my name is Alva Palmfeldt")
-myWindow += windowMaker("hello-world.exe", "", aboutMe)
+let myWindow = windowMaker("hello-world.exe", [], "Hello, my name is Alva Palmfeldt")
+myWindow += windowMaker("hello-world.exe", [], aboutMe)
 
 document.getElementById('windowSidebar').innerHTML = myWindow;
