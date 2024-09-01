@@ -9,6 +9,7 @@
   background-color: #f5e9f3;
   padding-left: 10px;
   padding-right: 10px;
+  border-radius: 8px;
 }
 
 .msInsideContainer {
@@ -17,7 +18,7 @@
   border-radius: 8px;
 }
 
-.msInsideContainer p {
+.msInsideContainer div {
   padding-bottom: 5px;
   margin: 0;
 }

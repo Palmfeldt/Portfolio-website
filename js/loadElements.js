@@ -10,7 +10,6 @@ export function windowMaker(title, msSelection, content) {
 
   for (let item of msSelection) {
     msSelectionContent += `<p>${item}</p>`;
-    console.log(item);
   }
   // Loop through the msSelection array and create <p> tags
   
@@ -33,7 +32,7 @@ export function windowMaker(title, msSelection, content) {
     
     <div class="msBorderContainer">
       <div class="msInsideContainer">
-        <p>${content}</p>
+        <div>${content}</div>
       </div>
     </div>
   </div>
