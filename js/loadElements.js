@@ -43,27 +43,27 @@ export function windowMaker(title, msSelection, content) {
 }
 
 
-function lightDarkSwitch(bool) {
-  if (bool) {
-    themeSwitch.innerHTML = '<img src="/img/icons/theme-light.svg" class="imgswitchLight" alt="theme-switch">';
-  } else {
-    themeSwitch.innerHTML = '<img src="/img/icons/theme-dark.svg" class="imgswitchDark" alt="theme-switch">';
-  }
-}
+// function lightDarkSwitch(bool) {
+//   if (bool) {
+//     themeSwitch.innerHTML = '<img src="/img/icons/theme-light.svg" class="imgswitchLight" alt="theme-switch">';
+//   } else {
+//     themeSwitch.innerHTML = '<img src="/img/icons/theme-dark.svg" class="imgswitchDark" alt="theme-switch">';
+//   }
+// }
 
-lightDarkSwitch(false)
+// lightDarkSwitch(false)
 
-/**
- * TODO Functtion to switch theme
- */
-themeSwitch.addEventListener('click', function () {
-  //   let theme = document.getElementById('theme');
-  //   if (theme.getAttribute('href') == 'css/light.css') {
-  //     theme.href = 'css/dark.css';
-  //   } else {
-  //     theme.href = 'css/light.css';
-  //   }
-  lightDarkSwitch(!themeSwitch.innerHTML.includes('light'));
+// /**
+//  * TODO Functtion to switch theme
+//  */
+// themeSwitch.addEventListener('click', function () {
+//   //   let theme = document.getElementById('theme');
+//   //   if (theme.getAttribute('href') == 'css/light.css') {
+//   //     theme.href = 'css/dark.css';
+//   //   } else {
+//   //     theme.href = 'css/light.css';
+//   //   }
+//   lightDarkSwitch(!themeSwitch.innerHTML.includes('light'));
 
-}
-);
+// }
+// );
