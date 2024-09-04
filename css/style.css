@@ -318,4 +318,16 @@ nav a {
         padding: 1rem;
     }
 
+    #sidebar {
+        display: none;
+    }
+
+    .dropdown-content {
+        display: none;
+      }
+      
+      .dropdown-content a {
+        display: block;
+      }
+
 }
