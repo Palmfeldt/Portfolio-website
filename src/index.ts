@@ -1,4 +1,3 @@
-// src/index.ts
 import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv";
 import fs from "fs";
@@ -15,13 +14,15 @@ dotenv.config();
 const app: Express = express();
 const port = process.env.PORT || 3000;
 
-
 app.use(express.static(path.join(__dirname, "frontend", "static")));
 
+let htmlContent = "";
 
-app.get("/", (req: Request, res: Response) => {
-  const indexPath = path.join(__dirname, "frontend", "index.html");
+// Function to read and process Markdown files
+const loadMarkdownFiles = () => {
   const directoryPath = path.join(__dirname, "MD-files");
+
+  const maxLength = 500; // Maximum number of characters to include
 
   fs.readdir(directoryPath, (err, files) => {
     if (err) {
@@ -29,19 +30,32 @@ app.get("/", (req: Request, res: Response) => {
     }
 
     const markdownFiles = files.filter(file => path.extname(file.toLowerCase()) === ".md");
-    let htmlContent = "";
 
-    markdownFiles.forEach((file, index) => {
+    markdownFiles.forEach((file) => {
       const filePath = path.join(directoryPath, file);
-      const markdownData = fs.readFileSync(filePath, "utf8");
+      let markdownData = fs.readFileSync(filePath, "utf8");
+      if (markdownData.length > maxLength) {
+        markdownData = markdownData.substring(0, maxLength) + "...";
+      }
       htmlContent += "<article>" + marked(markdownData) + "</article>";
-
     });
-    fs.readFile(indexPath, "utf8", (err, data) => {
+  });
+};
 
-      const modifiedHtml = data.replace('<div class="replacer"></div>', htmlContent);
-      res.send(modifiedHtml);
-    });
+// Load Markdown files when the application starts
+loadMarkdownFiles();
+
+app.get(["/", "/index.html"], (req: Request, res: Response) => {
+  const indexPath = path.join(__dirname, "frontend", "index.html");
+
+  fs.readFile(indexPath, "utf8", (err, data) => {
+    if (err) {
+      res.status(500).send("Could not read index.html");
+      return;
+    }
+
+    const modifiedHtml = data.replace('<div class="replacer"></div>', htmlContent);
+    res.send(modifiedHtml);
   });
 });
 

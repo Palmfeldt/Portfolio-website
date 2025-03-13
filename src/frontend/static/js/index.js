@@ -2,7 +2,7 @@ import { windowMaker } from "./loadElements.js"
 
 
 let aboutMe = `<p>
-        I'm a CS-graduate from Sweden who is currently working at Combitech. I've studied at Linnaeus University and have a bachelor's degree in Network Security.
+        I'm a CS-graduate from Sweden who is currently working at Aveki. I've studied at Linnaeus University and have a bachelor's degree in Network Security.
       </p>
       <p>
         I love everything to do with IT hardware, pentesting and web programming.
