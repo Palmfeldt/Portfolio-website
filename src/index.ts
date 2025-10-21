@@ -34,18 +34,18 @@ app.get(["/", "/index.html"], (req: Request, res: Response) => {
   });
 });
 
-app.get("/markdown/:filename", (req: Request, res: Response) => {
+app.get("/:filename", (req: Request, res: Response, next) => {
   const filename = req.params.filename;
   const filePath = path.join("MD-files", `${filename}.md`);
 
   fs.readFile(filePath, "utf8", (err, data) => {
     if (err) {
-      res.status(404);
+      next();
       return;
     }
-
+    const postPath = path.join(__dirname, "..", "public", "posts.html");
     const htmlContent = marked(data);
-    res.send(htmlContent);
+    res.sendFile(postPath);
   });
 });
 

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alva Palmfeldt - software engineer, hardware hacker and 3d printing enthusiast</title>
+  <!-- <link rel="icon" type="image/x-icon" href="./img/favicon.ico" /> -->
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/window.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--This is the sidebar (AKA the Windows 98 window)-->
+  <section id="sidebar">
+    <div id="headshotTitle">
+
+    </div>
+  </section>
+
+  <!-- This is the container for head,content,footer-->
+  <div id="formattedBox">
+    <!--This is the navbar-->
+    <header id="navbar">
+      <div class="formatter">
+        <h1 id="titleText">Palmfeldt</h1>
+        <nav>
+          <ul id="globnav">
+            <li><a href="index.html">Startpage</a></li>
+            <li><a href="about.html" class="currentPage">About</a></li>
+
+            <li class="dropdown">
+              <a href="javascript:void(0)"  id="dropdownButton" class="dropbtn">Extras</a>
+              <div class="dropdown-content">
+                <a href="projects.html">Win 98 JS</a>
+                <a href="https://github.com/palmfeldt">Github</a>
+              </div>
+            </li>
+            <!-- <li id="themeSwitch"></li> -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--This is the main content of the webpage-->
+    <main id="mainContent">
+
+    </main>
+    <!--This is the footer of the webpage-->
+    <footer id="footer">
+      <p>E-Mailaddress: <a href="mailto:alva@palmfeldt.se">alva@palmfeldt.se</a></p>
+      <div id="linkedIn">
+        <p>My LinkedIn
+          <a href="https://www.linkedin.com/in/alva-widerberg-palmfeldt-393a41261/">
+            <img class="socialMediaIcon" src="/img/linked.png" alt="linkedin-logo">
+          </a>
+        </p>
+      </div>
+      <div>
+        <p>Latest website update: 2025-10</p>
+        <p class="tiny">I'll probably forget to change this date, hehe</p>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="js/about.js"></script>
+  <script>
+    document.getElementById('dropdownButton').addEventListener('click', function() {
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === 'block') {
+        dropdownContent.style.display = 'none';
+      } else {
+        dropdownContent.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+
+</html>
