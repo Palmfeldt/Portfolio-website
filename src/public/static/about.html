@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alva Palmfeldt - software engineer, hardware hacker and 3d printing enthusiast</title>
+  <!-- <link rel="icon" type="image/x-icon" href="./img/favicon.ico" /> -->
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/window.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--This is the sidebar (AKA the Windows 98 window)-->
+  <section id="sidebar">
+    <div id="headshotTitle">
+
+    </div>
+    <div id="headshot">
+      
+    </div>
+  </section>
+
+  <!-- This is the container for head,content,footer-->
+  <div id="formattedBox">
+    <!--This is the navbar-->
+    <header id="navbar">
+      <div class="formatter">
+        <h1 id="titleText">Palmfeldt</h1>
+        <nav>
+          <ul id="globnav">
+            <li><a href="index.html">Startpage</a></li>
+            <li><a href="about.html" class="currentPage">About</a></li>
+
+            <li class="dropdown">
+              <a href="javascript:void(0)"  id="dropdownButton" class="dropbtn">Extras</a>
+              <div class="dropdown-content">
+                <a href="projects.html">Win 98 JS</a>
+                <a href="https://github.com/palmfeldt">Github</a>
+              </div>
+            </li>
+            <!-- <li id="themeSwitch"></li> -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--This is the main content of the webpage-->
+    <main id="mainContent">
+      <!--This is the banner ontop the posts-->
+      <!--This is the posts part of the main content-->
+      <section class="posts">
+        <div class="formatter">
+          <h2>About me</h2>
+          <div class="padding"></div>
+          <h3>Bio TLDR</h3>
+          <div class="biotldr">
+            <p>I write code, I 3d print stuff and get my fingers mangled after bouldering.</p>
+          </div>
+          <div class="padding"></div>
+          <h3>Long bio</h3>
+          <div class="bio">
+            <p>Hello, my name is Alva, I'm a programmer and a hardware hacker.</p>
+            <p>I've always had a passion for PC stuff. I remember when I got my Core 2 Duo, Windows XP computer when I
+              was
+              a little kid, I was crazy about RuneScape, AdventureQuest and other flash games.</p>
+            <p>After a while my mind begun to ponder, what if could hack any of my favorite games to give me more coins?
+            </p>
+            <p>And thus began my interest in how programs worked under the hood.</p>
+            <p>I built my first computer when I was 14 years so I could play Minecraft without frame drops.</p>
+            <p>Fast forward a few years and now I'm jumping between different subjects within IT. From hardware to
+              software.</p>
+
+            <p>When I was 18, I worked as a computer repair technician for my local school. That quickly expanded to
+              repairing the school computers for the entire commune. There I was repairing
+              Chromebooks, replacing busted screens, pencil lead shoved into the different connectors, replacing broken
+              chassis and various broken components. </p>
+
+            <p>Two years later I started studying Network Security at Linnaeus University. I learned a lot about
+              networking, programming and IT-Sec.</p>
+
+            <p>In 2023 I started working Combitech within their Weather Systems division as a system developer. I worked with
+              technologies such as Infrastructure as code with Ansible, RedHat Linux and web development in PHP,
+              TypeScript & React.</p>
+
+              <p>Today I work at Aveki as a system developer, building software in C#..</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <!--This is the footer of the webpage-->
+    <footer id="footer">
+      <p>E-Mailaddress: <a href="mailto:alva@palmfeldt.se">alva@palmfeldt.se</a></p>
+      <div id="linkedIn">
+        <p>My LinkedIn
+          <a href="https://www.linkedin.com/in/alva-widerberg-palmfeldt-393a41261/">
+            <img class="socialMediaIcon" src="/img/linked.png" alt="linkedin-logo">
+          </a>
+        </p>
+      </div>
+      <div>
+        <p>Latest website update: 2024-09</p>
+        <p class="tiny">I'll probably forget to change this date, hehe</p>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="js/about.js"></script>
+  <script>
+    document.getElementById('dropdownButton').addEventListener('click', function() {
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === 'block') {
+        dropdownContent.style.display = 'none';
+      } else {
+        dropdownContent.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+
+</html>

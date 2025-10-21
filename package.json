@@ -4,8 +4,9 @@
   "description": "This is the website for my portfolio",
   "main": "src/index.ts",
   "scripts": {
-    "start": "tsx src/index.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "clean": "tsc --build --clean",
+    "start-dev": "tsx src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -14,7 +15,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "bugs": {
     "url": "https://github.com/Palmfeldt/Portfolio-website/issues"
   },

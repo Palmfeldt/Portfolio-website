@@ -14,14 +14,14 @@ dotenv.config();
 const app: Express = express();
 const port = process.env.PORT || 3000;
 
-app.use(express.static(path.join(__dirname, "..", "public", "static")));
+app.use(express.static(path.join(__dirname, "public", "static")));
 
-const directoryPath = path.join(__dirname, "..", "MD-files");
+const directoryPath = path.join(__dirname, "MD-files");
 const maxLength = 500; // Maximum number of characters to include
 let htmlContent = loadMarkdownFiles(directoryPath, maxLength);
 
 app.get(["/", "/index.html"], (req: Request, res: Response) => {
-  const indexPath = path.join(__dirname, "..", "public", "index.html");
+  const indexPath = path.join(__dirname, "public", "index.html");
 
   fs.readFile(indexPath, "utf8", (err, data) => {
     if (err) {
@@ -43,7 +43,7 @@ app.get("/:filename", (req: Request, res: Response, next) => {
       next();
       return;
     }
-    const postPath = path.join(__dirname, "..", "public", "posts.html");
+    const postPath = path.join(__dirname, "public", "posts.html");
     const htmlContent = marked(data);
     res.sendFile(postPath);
   });

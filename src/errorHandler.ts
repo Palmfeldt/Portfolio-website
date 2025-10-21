@@ -5,5 +5,5 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 export const handleNotFound = (req: Request, res: Response, next: NextFunction) => {
-  res.status(404).sendFile(path.join(__dirname, "../public/static", "404.html"));
+  res.status(404).sendFile(path.join(__dirname, "public/static", "404.html"));
 };
