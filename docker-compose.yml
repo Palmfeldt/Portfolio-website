@@ -9,26 +9,30 @@ services:
     environment:
       - NODE_ENV=production
   nginx:
+    container_name: nginx
     image: nginx:latest
-    container_name: nginx_proxy
     restart: unless-stopped
     env_file: .env
     networks:
-      - app-network
+      - app-network # Update this with your application service network
     ports:
-      - "80:80"
-      - "443:443"
+      - 80:80
+      - 443:443
+    depends_on:
+      - app # Your application service
     volumes:
       - ./nginx/secure/:/etc/nginx/templates/
       - /etc/localtime:/etc/localtime:ro
       - ./nginx/certbot/conf:/etc/letsencrypt
       - ./nginx/certbot/www:/var/www/certbot
       - ./nginx/99-autoreload.sh:/docker-entrypoint.d/99-autoreload.sh  # Script to autoreload Nginx when certs are renewed
-    depends_on:
-      - app
+
   certbot:
     image: certbot/certbot
     volumes:
       - ./nginx/certbot/conf:/etc/letsencrypt
       - ./nginx/certbot/www:/var/www/certbot
     entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"  # Renew certificates every 12 hours
+
+networks:
+  app-network:
